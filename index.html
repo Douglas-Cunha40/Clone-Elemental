@@ -1,141 +1,208 @@
 <!DOCTYPE html>
-<html lang="Pt-Br">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Disney</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="./public/favicon.ico" />
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./public/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Disney+</title>
 </head>
-
 <body>
-    <header>
-        <div class="nav_bar">
+  <header class="header">
+    <a href="/" class="disney-logo">
+      <img src="./svg/logo-disney.svg" alt="logo-disney">
+    </a>
 
-            <img class="img_logo" src="./images/logo.png" alt="Logo da disney">
+    <nav class="navbar">
+      <ul class="header-large-screen">
+        <li>
+          <a href="/">
+            <img src="./svg/home.svg" alt="home-icon">
+            <span>home</span>
+          </a>
+        </li> 
+        <li>
+          <a href="/">
+            <img src="./svg/search.svg" alt="search-icon">
+            <span>search</span>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <img src="./svg/add.svg" alt="add-icon">
+            <span>watchlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <img src="./svg/star.svg" alt="star-icon">
+            <span>originals</span>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <img src="./svg/movies.svg" alt="movies-icon">
+            <span>movies</span>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <img src="./svg/tv.svg" alt="series-icon">
+            <span>series</span>
+          </a>
+        </li>
+      </ul>
 
-            <nav class="menu_mobile">
-                <ul>
-                    <li><img src="./icons/Home.png" alt="Icone de casa"></li>
-                    <li><img src="./icons/Search.png" alt="Icone de lupa"></li>
-                    <li><img src="./icons/Add.png" alt="Icone sinal de soma"></li>
-                    <li><img src="./icons/Vector.png" alt="Icone sinal de 3 pontos"></li>
-                </ul>
-            </nav>
+      <ul class="header-small-screen">
+        <li>
+          <a href="/">
+            <img src="./svg/home.svg" alt="home-icon">
+          </a>
+        </li> 
+        <li>
+          <a href="/">
+            <img src="./svg/search.svg" alt="search-icon">
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <img src="./svg/add.svg" alt="add-icon">
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <img src="./svg/dot.svg" alt="star-icon">
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-            <nav class="menu_header">
-                <ul>
-                    <li>
-                        <a href="#"><img src="./icons/Home.png" alt="Icone de casa">home</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./icons/Search.png" alt="Icone de lupa">search</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./icons/Add.png" alt="Icone sinal de soma">watchlist</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./icons/Star rate.png" alt="Icone de estrela">originals</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./icons/Local movies.png" alt="Icone de filmes">movies</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./icons/Tv.png" alt="Icone de tv">series</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="user">
-                <img src="./images/perfil.png" alt="Foto do usuário">
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <section class="title_film">
-                <div class="title_film_content">
-                    <img src="./images/filme.png" alt="Logo com nome do filme Elemental">
-                </div>
-            </section>
-            <section class="description_film">
-                <div class="description_film_content">
-                    <ul>
-                        <li><img src="./icons/Classificação.png" alt="Icone de classificação livre"></li>
-                        <li><img src="./icons/image 10.png" alt="Icone de indicação de audio digital"></li>
-                        <li><img src="./icons/image 9.png" alt="Icone de indicação legendas"></li>
-                        <li>2023</li>
-                    </ul>
-                    <div class="time_duration">
-                        1h 46m
-                    </div>
-                </div>
-                <div class="genders">
-                    <span>Romance, Family, Comedy, Fantasy, Animation</span>
-                </div>
-            </section>
+    <div class="profile">
+      <img src="./svg/perfil.svg" alt="img-perfil">
+    </div>
+  </header>
 
-            <section class="time_remaining">
-                <div class="btn">
-                    <button type="button">
-                        <img src="./icons/play.png" alt="Icone de play">
-                        continue
-                    </button>
-                    <div class="add">
-                        <img src="./icons/Add.png" alt="">
-                    </div>
-                </div>
-                <div class="time_watched">
-                    <div class="watched"></div>
-                    <div class="remaining"></div>
-                    24m remaining
-                </div>
-            </section>
+  <main>
+    <article class="movie-content">
+      <div class="background">
+        <img src="./svg/wallpaper.svg" alt="wallpaper-img">
+        <div></div>
+      </div>
 
-            <section class="sinopse_text">
-                <p>In a city where fire, water, land, and air residents live together, a fiery young woman and a
-                    go-with-the-flow guy
-                    are about to discover something elemental: How much they actually have in common.</p>
-            </section>
+      <figure class="movie-title">
+        <img src="./svg/movie-title-img.svg" alt="movie-title">
+      </figure>
 
-            <section class="suggestion_bar">
-                <div class="suggestion_list">
-                    <ul>
-                        <li class="active">suggested</li>
-                        <li>extras</li>
-                        <li>details</li>
-                    </ul>
-                </div>
-                <div class="line_division"></div>
-                <div class="others-titles">
-                    <img src="./images/image 3.png" alt="Banner do filme good ">
-                    <img src="./images/image 4.png" alt="Banner do filme dug">
-                    <img src="./images/image 5.png" alt="Banner do filme days">
-                    <img src="./images/image 6.png" alt="Banner do filme up">
-                    <img src="./images/image 6.png" alt="Banner do filme up">
-                </div>
-                <div class="space"></div>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <img src="./images/logo.png" alt="Logomarca Disney">
-        <ul>
-            <li><a href="">Policy</a></li>
-            <li><a href="">Protection in Brazil</a></li>
-            <li><a href="">Agreement</a></li>
-            <li><a href="">Help</a></li>
-            <li><a href="">Supported Devices</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Interest-based Ads</a></li>
-        </ul>
-        <p>Disney+ is a paid service, based on subscription and subject to terms and conditions. The Disney+ service is
-            marketed by The Walt Disney Company
-            (Brazil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo / SP -
-            CEP 04578-903, Brazil and CNPJ / M 73.042.962
-            / 0004-20</p>
-        <span>© Disney.All Rights Reserved</span>
-    </footer>
+      <section class="movie-info">
+        <section class="movie-info-images">
+          <img src="./svg/classificacao.svg" alt="classificacao-icon">
+          <img src="./svg/audio-descricao.svg" alt="audio-descricao-icon">
+          <img src="./svg/legendas.svg" alt="legendas-icon">
+
+          <span>2023 • 1h 46m</span>
+        </section>
+
+        <p>Romance, Family, Comedy, Fantasy, Animation</p>
+      </section>
+
+      <section class="controllers">
+        <button class="bnt-continue">
+          <img src="./svg/play.svg" alt="play-icon">
+          <span>Continue</span>
+        </button>
+
+        <button class="bnt-add">
+          <img src="./svg/bnt-add.svg" alt="bnt-add-icon">
+        </button>
+      </section>
+
+      <section class="timeline">
+        <div class="progress-bar"></div>
+        <span>24m remaining</span>
+      </section>
+
+      <p class="synopsis">
+        In a city where fire, water, land, and air residents live together, a fiery young woman and a go-with-the-flow guy are about to discover something elemental: How much they actually have in common.
+      </p>
+    </article>
+
+    <article class="tab-show">
+      <section class="tabs">
+        <button class="selected">suggested</button>
+        <button class="">extras</button>
+        <button class="">details</button>
+      </section>
+
+      <section class="tabcontent">
+        <a href="/">
+          <img src="./svg/movie-cover01.svg" alt="cover-img-01">
+        </a>
+        <a href="/">
+          <img src="./svg/movie-cover02.svg" alt="cover-img-02">
+        </a>
+        <a href="/">
+          <img src="./svg/movie-cover03.svg" alt="cover-img-03">
+        </a>
+        <a href="/">
+          <img src="./svg/movie-cover04.svg" alt="cover-img-04">
+        </a>
+        <a href="/">
+          <img src="./svg/movie-cover05.svg" alt="cover-img-05">
+        </a>
+        <a href="/">
+          <img src="./svg/movie-cover06.svg" alt="cover-img-06">
+        </a>
+        <a href="/">
+          <img src="./svg/movie-cover07.svg" alt="cover-img-07">
+        </a>
+        <a href="/">
+          <img src="./svg/movie-cover08.svg" alt="cover-img-08">
+        </a>
+      </section>
+    </article>
+  </main>
+  
+  <footer class="footer">
+    <figure class="img-footer">
+      <img src="./svg/logo-disney.svg" alt="logo-disney">
+    </figure>
+
+    <ul class="links-footer">
+      <li>
+        <a href="/">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="/">Data Protection in Brazil</a>
+      </li>
+      <li>
+        <a href="/">Subscriber Agreement</a>
+      </li>
+      <li>
+        <a href="/">Help</a>
+      </li>
+      <li>
+        <a href="/">Supported Devices</a>
+      </li>
+      <li>
+        <a href="/">About Us</a>
+      </li>
+      <li>
+        <a href="/">Interest-based Ads</a>
+      </li>
+    </ul>
+
+    <p class="data-footer">
+      Disney+ is a paid service, based on subscription and subject to terms and conditions. The Disney+ service is marketed by The Walt Disney Company (Brazil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, 
+      São Paulo / SP - CEP 04578-903, Brazil and CNPJ / M 73.042.962 / 0004-20
+    </p>
+
+    <span class="all-rights-footer">© Disney.All Rights Reserved</span>
+  </footer>
 </body>
-
 </html>
